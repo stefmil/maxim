@@ -1,6 +1,26 @@
-body{
-
+.vcenter {
+   display: inline-block;
+   vertical-align: middle;
+   float: none;
 }
+
+body{
+  background-image: url('back.jpg');
+}
+
+.maindiv{
+  background-color: #fff;
+  margin: 5%;
+  opacity: 0.9;
+}
+
+
+
+
+
+
+
+
 /*     General overwrite     */
 a{
     color: #2C93FF;

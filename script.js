@@ -57,6 +57,7 @@ var ajax = {
 		},
 		SetText: function(text) {
 			document.getElementById("status").innerHTML=text;
+      document.getElementById("alert").classList.remove("hidden");
 		}
 	}
 
@@ -75,7 +76,7 @@ var people = [
 {id:"764d31ed",name:"Stefan",greeting:"Cao Stefane"},
 {id:"443215c2",name:"Milosevski",greeting:"Добар дан Добар дан"},
 {id:"e310600f",name:"mimi",greeting:"Cao Mama Mimi :)"},
-{id:"7b3f4a46",name:"",greeting:""},
+{id:"7b3f4a46",name:"sandra",greeting:"Cao tetka Sandra"},
 {id:"73b7dd22",name:"",greeting:""},
 {id:"c3a4369e",name:"",greeting:""},
 {id:"173f36e5",name:"",greeting:""},
