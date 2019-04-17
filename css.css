@@ -1,35 +1,32 @@
-.vcenter {
-   display: inline-block;
-   vertical-align: middle;
-   float: none;
-}
-
 body{
   background-image: url('back.jpg');
   font-family: 'Caveat', cursive;
   font-size: 18px;
 }
-
 .maindiv{
   background-color: #fff;
   margin: 4%;
   margin-bottom: 0px;
   opacity: 0.93;
+  max-width: 1200px;
 }
 .maindivimg{
   margin: 4%;
   margin-top: 0px;
+  max-width: 1200px;
 }
-
 #pozivJednina{
   font-size: 20px;
-
 }
-
 #pozivMnozina{
   font-size: 20px;
 }
-
 .alert{
   margin-top: 5%;
+}
+label{
+  font-weight: 1 !important;
+}
+.row-empty{
+  height: 25px;
 }

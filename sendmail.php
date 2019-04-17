@@ -8,6 +8,7 @@ require './PHPMailer/PHPMailerAutoload.php';
 $mail = new PHPMailer;
 $mail->isSMTP();
 
+$id = $_POST['id'];
 $ime = $_POST['ime'];
 $dolazi = $_POST['dolazi'];
 $brojVelikih = $_POST['brojVelikih'];
@@ -22,9 +23,11 @@ $mail->Password = "voyager171513"; // Your Gmail login password or App Specific 
 
 $mail->setFrom("stefan.voyager@gmail.com", "Krstenje"); // Set the sender of the message.
 $mail->addAddress('moonwalker13@gmail.com', 'Stefan'); // Set the recipient of the message.
-$mail->Subject = 'Potvrda dolaska na krstenje'; // The subject of the message.
+$mail->Subject = 'Potvrda dolaska na krstenje: '.$ime; // The subject of the message.
+$mail->AddCC("milena.milosevski@gmail.com", "Mimi");
 
-$mail->Body = "Ime gosta: ".$ime."\r\nDa li dolazi: ".$dolazi." \r\nBroj velikih: ".$brojVelikih." \r\nBroj malih: ".$brojMalih; // Set a plain text body.
+
+$mail->Body = "ID: ".$id."\r\nIme gosta: ".$ime."\r\nDa li dolazi: ".$dolazi." \r\nBroj velikih: ".$brojVelikih." \r\nBroj malih: ".$brojMalih; // Set a plain text body.
 
 if ($mail->send()) {
     echo "sent";
