@@ -80,6 +80,31 @@ var ajax = {
 						}
 						ajax.isSubmiting = false;
 					});
+
+                    /*var req = new XMLHttpRequest();
+
+                    req.open("POST", "sendmail.php", true);
+                    req.setRequestHeader("Content-type",  "application/x-www-form-urlencoded");
+                    req.send(objectToSend);
+                    req.onreadystatechange = function() {
+                        if (req.readyState == 4 && req.status == 200) {
+                            var data = req.responseText;
+                            if(data == "sent") {
+                                if(dolazi == 'da'){
+                                    ajax.SetText("Послато. Хвала, видимо се!");
+                                }else{
+                                    ajax.SetText("Послато. Баш ми је криво што се нећемо видети!");
+                                }
+                            } else {
+                                ajax.SetText("Грешка");
+                            }
+                        }else{
+                            ajax.SetText("Грешка");
+                        }
+                        ajax.isSubmiting = false;
+                    }*/
+
+
 				}
 			}
 		},
@@ -96,12 +121,12 @@ var people = [
 {id:"7b3f4a46",name:"Dasa",greeting:"Ћао бака Дашо,",single:true},
 {id:"73b7dd22",name:"Ivana i Strale",greeting:"Ћао сека Сузо и бата Његоше, тета Ивана и течо Страле,",single:false},
 {id:"c3a4369e",name:"Misa i Sandra",greeting:"Здраво бата Ацика, стрина Сандра и стриче Мишо,",single:false},
-{id:"173f36e5",name:"Tetka Sonja",greeting:"Здраво баба Соња и деда Аце,",single:false},
-{id:"be67a8e7",name:"Deda Boris",greeting:"Здраво прадеда,",single:true},
+{id:"173f36e5",name:"Tetka Sonja",greeting:"Здраво бабо Соња и дедо Аце,",single:false},
+{id:"be67a8e7",name:"Deda Boris",greeting:"Здраво прадеде Боцо,",single:true},
 {id:"7dd40a5e",name:"Maja i Dare",greeting:"Здраво бата Матеј, тето Маје и тетин Даре,",single:false},
 {id:"45d4e43b",name:"Moni",greeting:"Здраво тето Монче,",single:true},
 {id:"c3e3e8af",name:"Tetka Irena",greeting:"Здраво баба Ирена и деда Бобе,",single:false},
-{id:"5f8df3f0",name:"Magde i Dimitar",greeting:"Здраво бата Константин, тето Магде и течо Димитар,",single:false},
+{id:"5f8df3f0",name:"Magde i Dimitar",greeting:"Здраво бата Константин, тето Магде и тетин Димитар,",single:false},
 {id:"8f1685a1",name:"Kum Zoran",greeting:"Ћао татини кумови,",single:false},
 {id:"bda5fa66",name:"Miocevi roditelji",greeting:"Здраво тета Славице и чика Драгославе,",single:false},
 {id:"a14bf203",name:"Nevena Mioceva",greeting:"Ћао кумова сестро,",single:true},
@@ -122,7 +147,7 @@ var people = [
 {id:"46f52162",name:"Kuma Vale",greeting:"Здраво мамина кумо,",single:true},
 {id:"635e81d4",name:"Baba i Deda JZ",greeting:"Здраво бабуче и дедуче,",single:false},
 {id:"b5964fbc",name:"Mare i Vule",greeting:"Здраво тете и течо,",single:false},
-{id:"c00d29ae",name:"Tetka Jasmina",greeting:"Здраво баба и деда,",single:false},
+{id:"c00d29ae",name:"Tetka Jasmina",greeting:"Здраво бабо и дедо,",single:false},
 {id:"78a18c9d",name:"Caci i Marjan",greeting:"Здраво тета Цаци и тетин Марјан,",single:false},
 {id:"5e7c3ae6",name:"Sneze i Viktor",greeting:"Здраво дада Луна, тета и тетин,",single:false},
 {id:"e56e5397",name:"Dare",greeting:"Здраво вујче најубав,",single:true},
@@ -131,7 +156,7 @@ var people = [
 {id:"d0ffa925",name:"Dragisa i Sandra",greeting:"Ћао бате Сале, Оги, Фићо и Алекса, ујко Гиша и ујна Сандра,",single:false},
 {id:"11ac1f6b",name:"Cika Igor i Magde",greeting:"Ћао баба и деда,",single:false},
 {id:"90955d46",name:"Mile i Dafina",greeting:"Здраво Бојана и Тијана,",single:false},
-{id:"c071ffcb",name:"",greeting:"",single:false},
+{id:"c071ffcb",name:"Mali Simic",greeting:"Хеј мејт, Симићу Мали,",single:true},
 {id:"28e76b53",name:"",greeting:"",single:false},
 {id:"f6e4f31a",name:"",greeting:"",single:false},
 {id:"73290959",name:"",greeting:"",single:false},
